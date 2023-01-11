@@ -13,3 +13,5 @@ $('.multiple-items').slick({
     // appendDots:
     // ''
 });
+
+// $('.slick-dots').html('<li></li>')
