@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="./libs/slick/slick-theme.css">
+    <link rel="stylesheet" href="./libs/slick/slick.css">
 </head>
 <body>
     <div class="all">
@@ -24,7 +25,7 @@
                 </div>
     
                 <div class="right">
-                    <P><i class="fa-solid fa-phone"></i> 096 1400 106</P>
+                    <a href="tel:096 1400 106"><i class="fa-solid fa-phone"></i> 096 1400 106</a>
                 </div>
             </div>
     
@@ -33,7 +34,7 @@
                     <a href=""><i class="fa-brands fa-square-facebook"></i></a>
                     <a href=""><i class="fa-brands fa-instagram"></i></a>
                     <a href=""><i class="fa-solid fa-bag-shopping"></i></a>
-                    <a href=""><i class="fa-solid fa-phone"></i></a>
+                    <a href="tel:096 1400 106"><i class="fa-solid fa-phone"></i></a>
                 </div>
     
                 <div class="cen">
@@ -43,7 +44,7 @@
     
             <div class="top">
                 <ul class="top-left">
-                    <li><a href="">Home</a></li>
+                    <li><a href="" class="active">Home</a></li>
                     <li>
                         <div class="dropdown leftdowm">
                             <button class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
@@ -56,19 +57,47 @@
                             </div>
                           </div>
                     </li>
-                    <li><a href="">Sharing</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="" class="">Sharing</a></li>
+                    <li><a href="" class="">Contact</a></li>
                 </ul>  
     
                 <div class="bar-mobi">
-                    <i class="fa-solid fa-bars"></i>
+                    <div id="click-bar"><i class="fa-solid fa-bars"></i></div>
+                    <div id="result">
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Sharing</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <ul class="top-left">
+                        <li><a href="" class="active">Home</a></li>
+                        <li>
+                            <div class="dropdown leftdowm">
+                                <button class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                  Shop
+                                </button>
+                                <div class="dropdown-menu">
+                                  <a class="dropdown-item" href="#">Action</a>
+                                  <a class="dropdown-item" href="#">Another action</a>
+                                  <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                              </div>
+                        </li>
+                        <li><a href="" class="">Sharing</a></li>
+                        <li><a href="" class="">Contact</a></li>
+                    </ul>  
                 </div>
     
                 <a href="" class="logo"><h1>Skinlax</h1></a>
     
                 <ul class="top-ri">  
                     <li class="top-ri_li"><a href=""><i class="fa-sharp fa-solid fa-bag-shopping"></i></a></li>
-                    <li class="top-ri_li"><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                    <li class="top-ri_li">
+                        <input class="inputt" type="text" placeholder="  Search">
+                        <button class="change"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </li>
                     <li class="top-ri_li"><a href=""><i class="fa-regular fa-user"></i></a></li>
                 </ul>
             </div>
@@ -303,7 +332,7 @@
               <div class="carousel-item active">
                 <div class="ct2-1">
                     <div class="ct2-2">
-                        <a href=""><img src="./img/7.jfif" alt=""></a>
+                        <a href=""><img src="./img/11.jfif" alt=""></a>
                         <div class="ct2-3">
                             <a href="">tẩu da chết toàn thân cà phê & cam ngọt</a>
                             <p>250.000đ</p>
@@ -313,27 +342,6 @@
                         <a href=""><img src="./img/16.jfif" alt=""></a>
                         <div class="ct2-3">
                             <a href="">thanh lăn nước hoa tinh dầu</a>
-                            <p>250.000đ</p>
-                        </div>
-                    </div>
-                    <div class="ct2-2">
-                        <a href=""><img src="./img/7.jfif" alt=""></a>
-                        <div class="ct2-3">
-                            <a href="">nước hoa hương hoa mộc lan </a>
-                            <p>250.000đ</p>
-                        </div>
-                    </div>
-                    <div class="ct2-2">
-                        <a href=""><img src="./img/8.jfif" alt=""></a>
-                        <div class="ct2-3">
-                            <a href="">nước hoa hương trà trắng & trái sung</a>
-                            <p>250.000đ</p>
-                        </div>
-                    </div>
-                    <div class="ct2-2">
-                        <a href=""><img src="./img/16.jfif" alt=""></a>
-                        <div class="ct2-3">
-                            <a href="">xà phòng than hoạt tính</a>
                             <p>250.000đ</p>
                         </div>
                     </div>
@@ -355,24 +363,21 @@
                             <p>250.000đ</p>
                         </div>
                     </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="ct2-1">
                     <div class="ct2-2">
-                        <a href=""><img src="./img/7.jfif" alt=""></a>
+                        <a href=""><img src="./img/11.jfif" alt=""></a>
                         <div class="ct2-3">
-                            <a href="">nước hoa hương hoa mộc lan </a>
+                            <a href="">tẩu da chết toàn thân cà phê & cam ngọt</a>
                             <p>250.000đ</p>
                         </div>
                     </div>
                     <div class="ct2-2">
                         <a href=""><img src="./img/8.jfif" alt=""></a>
                         <div class="ct2-3">
-                            <a href="">nước hoa hương trà trắng & trái sung</a>
-                            <p>250.000đ</p>
-                        </div>
-                    </div>
-                    <div class="ct2-2">
-                        <a href=""><img src="./img/2.jpg" alt=""></a>
-                        <div class="ct2-3">
-                            <a href="">xà phòng than hoạt tính</a>
+                            <a href="">thanh lăn nước hoa tinh dầu</a>
                             <p>250.000đ</p>
                         </div>
                     </div>
@@ -388,50 +393,19 @@
               <span class="sr-only">Next</span>
             </button>
           </div>
-
-        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
-            <h2>chăm sóc cơ thể </h2>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
+        
+        <div class="slickshow">
+            <h2>chăm sóc cơ thể</h2>
+            <div class="slick-1">
                 <div class="ct2-1">
                     <div class="ct2-2">
-                        <a href=""><img src="./img/11.jfif" alt=""></a>
+                        <a href=""><img src="./img/16.jfif" alt=""></a>
                         <div class="ct2-3">
                             <a href="">tẩu da chết toàn thân cà phê & cam ngọt</a>
-                            <p>250.000đ</p>
-                        </div>
-                    </div>
-                    <div class="ct2-2">
-                        <a href=""><img src="./img/2.jpg" alt=""></a>
-                        <div class="ct2-3">
-                            <a href="">thanh lăn nước hoa tinh dầu</a>
-                            <p>250.000đ</p>
-                        </div>
-                    </div>
-                    <div class="ct2-2">
-                        <a href=""><img src="./img/7.jfif" alt=""></a>
-                        <div class="ct2-3">
-                            <a href="">nước hoa hương hoa mộc lan </a>
-                            <p>250.000đ</p>
-                        </div>
-                    </div>
-                    <div class="ct2-2">
-                        <a href=""><img src="./img/8.jfif" alt=""></a>
-                        <div class="ct2-3">
-                            <a href="">nước hoa hương trà trắng & trái sung</a>
-                            <p>250.000đ</p>
-                        </div>
-                    </div>
-                    <div class="ct2-2">
-                        <a href=""><img src="./img/15.jfif" alt=""></a>
-                        <div class="ct2-3">
-                            <a href="">xà phòng than hoạt tính</a>
                             <p>250.000đ</p>
                         </div>
                     </div>
                 </div>
-              </div>
-              <div class="carousel-item">
                 <div class="ct2-1">
                     <div class="ct2-2">
                         <a href=""><img src="./img/11.jfif" alt=""></a>
@@ -440,53 +414,21 @@
                             <p>250.000đ</p>
                         </div>
                     </div>
-                    <div class="ct2-2">
-                        <a href=""><img src="./img/11.jfif" alt=""></a>
-                        <div class="ct2-3">
-                            <a href="">thanh lăn nước hoa tinh dầu</a>
-                            <p>250.000đ</p>
-                        </div>
-                    </div>
-                    <div class="ct2-2"></div>
-                    <div class="ct2-2"></div>
-                    <div class="ct2-2"></div>
-                </div>    
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-target="#carouselExampleFade" data-slide="prev">
-              <span id="cham" class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-target="#carouselExampleFade" data-slide="next">
-              <span id="cham" class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </button>
-          
-              <div class="carousel-item">
+                    
+                </div>
                 <div class="ct2-1">
                     <div class="ct2-2">
-                        <a href=""><img src="./img/8.jfif" alt=""></a>
+                        <a href=""><img src="./img/12.jfif" alt=""></a>
                         <div class="ct2-3">
                             <a href="">tẩu da chết toàn thân cà phê & cam ngọt</a>
                             <p>250.000đ</p>
                         </div>
                     </div>
-                    <div class="ct2-2">
-                        <a href=""><img src="./img/6.webp" alt=""></a>
-                        <div class="ct2-3">
-                            <a href="">thanh lăn nước hoa tinh dầu</a>
-                            <p>250.000đ</p>
-                        </div>
-                    </div>
-                    <div class="ct2-2"></div>
-                    <div class="ct2-2"></div>
-                    <div class="ct2-2"></div>
-                </div>    
-              </div>
-            </div>
-          </div>
+                    
+                </div>
+            </div> 
         </div>
-
+        
         <div class="ct4">
             <div class="container">
                 <h2>sharing</h2>
@@ -565,7 +507,7 @@
 
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="./libs/slick/slick.min.js"></script>
         <script src="./js.js"></script>
 </body>
 
